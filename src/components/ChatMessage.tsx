@@ -26,8 +26,8 @@ const ChatMessage: React.FC<ChatMessageProps> = ({
     >
       {role === 'assistant' && (
         <div className="flex-shrink-0">
-          <Avatar className="h-8 w-8 bg-hcp-purple text-white">
-            <span className="font-semibold">AI</span>
+          <Avatar className="h-8 w-8 bg-hcp-purple text-white flex items-center justify-center">
+            <span className="font-semibold">A</span>
           </Avatar>
         </div>
       )}
@@ -41,7 +41,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({
         <p className="whitespace-pre-wrap">{content}</p>
         <div className={cn(
           "text-xs mt-1",
-          role === 'user' ? "text-blue-100" : "text-gray-500"
+          role === 'user' ? "text-blue-100" : "text-gray-500 dark:text-gray-400"
         )}>
           {timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
         </div>
@@ -49,7 +49,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({
       
       {role === 'user' && (
         <div className="flex-shrink-0">
-          <Avatar className="h-8 w-8 bg-hcp-dark text-white">
+          <Avatar className="h-8 w-8 bg-hcp-blue text-white flex items-center justify-center">
             <User size={18} />
           </Avatar>
         </div>
