@@ -6,7 +6,7 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col p-4 md:p-8 bg-gradient-to-br from-hcp-dark via-hcp-dark/95 to-hcp-dark/90">
       <header className="max-w-4xl mx-auto w-full mb-6 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold mb-2 text-white">
+        <h1 className="text-3xl md:text-4xl font-bold mb-2 text-white text-shadow-sm">
           Agastya
         </h1>
         <p className="text-muted-foreground text-sm md:text-base">

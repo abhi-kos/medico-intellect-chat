@@ -76,9 +76,9 @@ const ChatInterface: React.FC = () => {
   };
 
   return (
-    <Card className="flex flex-col h-[85vh] mx-auto rounded-xl shadow-lg bg-white/5 backdrop-blur-sm border-hcp-blue/20">
+    <Card className="flex flex-col h-[85vh] mx-auto rounded-xl shadow-xl bg-white/5 backdrop-blur-sm border-hcp-blue/20 overflow-hidden">
       <CardContent className="flex flex-col h-full p-0">
-        <div className="flex-1 overflow-y-auto p-4">
+        <div className="flex-1 overflow-y-auto p-4 scrollbar-thin">
           <div className="space-y-4">
             {messages.map((message) => (
               <ChatMessage
